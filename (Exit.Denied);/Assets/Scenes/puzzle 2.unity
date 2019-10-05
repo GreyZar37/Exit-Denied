@@ -2295,7 +2295,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh52804
+  m_Name: pb_Mesh72364
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4024,7 +4024,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9579096, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9579096, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
     - target: {fileID: 13615390, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 134338, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 127968, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 152642, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13783410, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13736924, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
