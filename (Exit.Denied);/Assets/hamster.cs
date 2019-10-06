@@ -10,8 +10,8 @@ public class hamster : MonoBehaviour
 
     public float RotationSpeed = 100;
 
- 
 
+    bool canjump = true;
  
     void Update()
     {
@@ -38,9 +38,10 @@ public class hamster : MonoBehaviour
             transform.Rotate(0, RotationSpeed * Time.deltaTime, 0);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canjump)
         {
             rb.AddForce(Vector3.up * 200);
+            canjump = false;
         }
 
         movement.y = rb.velocity.y;
@@ -48,5 +49,13 @@ public class hamster : MonoBehaviour
         rb.velocity = new Vector3(movement.x*Speed * Time.deltaTime, movement.y, movement.z *Speed * Time.deltaTime);
 
 
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "ground")
+        {
+            canjump = true; 
+
+        }
     }
 }
