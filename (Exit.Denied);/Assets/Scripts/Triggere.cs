@@ -12,7 +12,7 @@ public class Triggere : MonoBehaviour
     {
         if (col.tag == "Cube")
         { 
-        door.transform.position += new Vector3(0, 4, 0);
+        door.transform.position += new Vector3(0, 2, 0);
         }
     }
 
