@@ -40,10 +40,12 @@ public class hamster : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.AddForce(Vector3.up * 1000);
+            rb.AddForce(Vector3.up * 200);
         }
 
-        rb.velocity = movement*Speed* Time.deltaTime;
+        movement.y = rb.velocity.y;
+
+        rb.velocity = new Vector3(movement.x*Speed * Time.deltaTime, movement.y, movement.z *Speed * Time.deltaTime);
 
 
     }
