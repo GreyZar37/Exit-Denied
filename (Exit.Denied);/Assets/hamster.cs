@@ -40,7 +40,7 @@ public class hamster : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && canjump)
         {
-            rb.AddForce(Vector3.up * 200);
+            rb.AddForce(Vector3.up * 300);
             canjump = false;
         }
 
@@ -57,5 +57,6 @@ public class hamster : MonoBehaviour
             canjump = true; 
 
         }
+       
     }
 }
