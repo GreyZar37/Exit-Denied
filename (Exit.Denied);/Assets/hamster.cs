@@ -23,7 +23,12 @@ public class hamster : MonoBehaviour
             movement += transform.forward; 
         }
 
-        if(Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.S))
+        {
+            movement -= transform.forward;
+        }
+
+        if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(0, -RotationSpeed*Time.deltaTime, 0);
         }
@@ -31,6 +36,11 @@ public class hamster : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             transform.Rotate(0, RotationSpeed * Time.deltaTime, 0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector3.up * 1000);
         }
 
         rb.velocity = movement*Speed* Time.deltaTime;
