@@ -6,13 +6,17 @@ public class Triggere : MonoBehaviour
 {
     [SerializeField]
 
-    GameObject door; 
+    GameObject door;
 
     void OnTriggerEnter(Collider col)
     {
+        if (col.tag == "Cube")
+        { 
         door.transform.position += new Vector3(0, 4, 0);
+        }
     }
 
         
     
 }
+
